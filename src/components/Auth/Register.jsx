@@ -6,7 +6,7 @@ import {
   signInWithPopup,
   updateProfile,
 } from "firebase/auth";
-import { auth, googleProvider } from "../../fb";
+import { auth} from "../../fb";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { createUser, isAdmin, setUser } from "../../redux/actions";
@@ -152,7 +152,7 @@ function Register() {
   async function googleHandleSubmit(e) {
     setError(null);
     e.preventDefault();
-    await signInWithPopup(auth, googleProvider)
+    await signInWithPopup(auth)
       .then((result) => {
         const userCred = result.user;
         console.log("rrrrrrrrrrrrrr", userCred);

@@ -1,6 +1,5 @@
 {
-  "name": "bebidasfront",
-  "version": "1.0.0",
+
   "dependencies": {
     "react":   "^17.0.2",
     "@emailjs/browser": "^3.6.2",
@@ -21,7 +20,7 @@
     "redux": "^4.0.5",
     "redux-thunk": "^2.4.1",
     "sweetalert": "^2.1.2",
-    "typekit": "^0.1.1",
+    "typekit": "^0.1.1"
   
   },
   
